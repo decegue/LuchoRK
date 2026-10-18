@@ -15,8 +15,8 @@ h4 {/*-----SUBTITULOS------- */
 
 }
 
-/*---CTA---*/ 
-h5{
+
+h5{/*---CTA---*/ 
     font-size: px;
     color: var(--accent-color);
     margin: 0;

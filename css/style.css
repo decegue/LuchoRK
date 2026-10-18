@@ -76,10 +76,9 @@ nav ul li a {
 }
 
 
-nav ul li a:hover {
-    background: #ffffff26;
-    border-radius: 8px;
-    padding: 10px 20px 10px 20px;
+.login:hover {
+    background: var(--primary-color);
+    color: var(--terciary-color);
 }
 
 /*------------------FOOTER-------------------------*/
@@ -120,7 +119,7 @@ footer a {
     width: 30px;
 }
 
-.github {
+.github {/*Link a mi Github */
     max-width: 30px;
 }
 
@@ -158,3 +157,30 @@ transition: width 0.25s linear;
 .lineanimacion:hover::after{
     width: 100%;
 }
+
+
+/*-----Slider animation for nav-----*/
+.animacionav{
+
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionav:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: black;
+transition: width 0.25s linear;
+}
+
+.animacionav:hover::after{
+    width: 100%;
+}
+

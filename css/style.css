@@ -45,7 +45,7 @@ nav ul {
     align-items: center;
     padding: 10px;
     height: 70px;
-    width: 160%;
+    width: 155%;
 }
 
 nav ul li {
@@ -66,13 +66,24 @@ nav ul li > a.active {
 nav ul li a {
     text-decoration: none;
     color: var(--text-color);
-    width: 70px;
+    width: auto;
 }
 
 .login {
     background: var(--accent-color);
     border-radius: 8px;
     padding: 10px 20px 10px 20px;
+}
+
+.loginbnw {
+    background: black;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+.loginbnw:hover {
+    background: #595959;
+    color: #ececec;
 }
 
 
@@ -119,7 +130,7 @@ footer a {
     width: 30px;
 }
 
-.github {/*Link a mi Github */
+.github {/*Link a mi Gu */
     max-width: 30px;
 }
 
@@ -159,9 +170,33 @@ transition: width 0.25s linear;
 }
 
 
+/*-----Slider animation for basic nav-----*/
+.animacionheader{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionheader:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: white;
+transition: width 0.25s linear;
+}
+
+.animacionheader:hover::after{
+    width: 100%;
+    color: white;
+}
+
 /*-----Slider animation for nav-----*/
 .animacionav{
-
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -181,6 +216,57 @@ transition: width 0.25s linear;
 }
 
 .animacionav:hover::after{
+    width: 100%;
+    color: black;
+}
+
+/*-----Slider animation for white nav-----*/
+.animacionavwhite{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionavwhite:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: white;
+transition: width 0.25s linear;
+}
+
+.animacionavwhite:hover::after{
+    width: 100%;
+    color: white;
+}
+
+/*-----Slider animation for active nav -----*/
+.animacionactive{
+    color: var(--primary-color);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionactive:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--primary-color);
+transition: width 0.25s linear;
+}
+
+.animacionactive:hover::after{
     width: 100%;
 }
 

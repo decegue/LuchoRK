@@ -56,7 +56,7 @@ nav ul li {
     margin-left: 80px;
     margin-right: 80px;
     align-items: center;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 5px 0;
 }
 
 nav ul li > a.active {
@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 .login {
-    background: var(--accent-color);
+    background: var(--primary-color);
     border-radius: 8px;
     padding: 10px 20px 10px 20px;
 }
@@ -88,8 +88,48 @@ nav ul li a {
 
 
 .login:hover {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: var(--terciary-color);
+}
+
+
+/*------------------NAV DESPLEGABL------------------*/
+
+.menuNivel1 {
+    display: flex;
+    align-items: center;
+}
+
+.menuNivel1 li {
+	position: relative;
+	transition: 1s;
+	justify-content: center;
+}
+
+.menuNivel1 li > a {
+    display: block;
+}
+
+.menuNivel2 {
+    display: none;
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #b1b1b138;
+}
+
+.menuNivel2 > li {
+    
+    width: 100%;
+    text-align: center;
+}
+
+.menuNivel1 li:hover ul {
+    display: flex;
+    flex-direction: column;
 }
 
 /*------------------FOOTER-------------------------*/
@@ -221,28 +261,29 @@ transition: width 0.25s linear;
 }
 
 /*-----Slider animation for white nav-----*/
-.animacionavwhite{
+.animacionavblack{
     margin: 0 auto;
     padding: 0;
     position: relative;
     list-style: none;
     overflow: hidden;
+    color: black;
 }
 
-.animacionavwhite:after {
+.animacionavblack:after {
 content: '';
 height: 2px;
 width: 0%;
 position: absolute;
 bottom: 0;
 left: 0;
-background: white;
+background: black;
 transition: width 0.25s linear;
 }
 
-.animacionavwhite:hover::after{
+.animacionavblack:hover::after{
     width: 100%;
-    color: white;
+    color: black;
 }
 
 /*-----Slider animation for active nav -----*/

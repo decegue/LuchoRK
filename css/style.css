@@ -107,18 +107,21 @@ nav ul li a {
 }
 
 .menuNivel1 li > a {
-    display: block;
+	display: block;
+	z-index: 10000;
 }
 
 .menuNivel2 {
-    display: none;
-    position: absolute;
-    width: 70%;
-    height: auto;
-    top: 100%;
-    border-radius: 6px;
-    box-sizing: border-box;
-    background: #b1b1b138;
+	display: none;
+	position: absolute;
+	width: 70%;
+	height: auto;
+	top: 100%;
+	border-radius: 6px;
+	box-sizing: border-box;
+	background: #b1b1b138;
+	top: -10px;
+	padding-top: 45px;
 }
 
 .menuNivel2 > li {

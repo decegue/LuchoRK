@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #C50D08;
+    --secundary-color: #0d2743;
+    --terciary-color: #E2D7C4;
+    --accent-color: #F7632B;
+    --text-color: #FFFFFF;
+    --text-color2: #0d2743;
+    --decegue-color: #c581ff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif, "Basic";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+
+/*------------------MENU-------------------------*/
+header {
+    background: #ffffff;
+    background: linear-gradient(180deg, #0d274342 77%, #ffffff00 100%); /*var(--accent-color)*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+header img {
+    max-width: 140px;
+    max-height: 80px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    height: 70px;
+    width: 100dvw; 
+}
+
+nav ul li {
+    display: flex; /* La verdad que simplemente funciona asique a la minima quito esto*/
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    align-items: center;
+    padding: 10px 0 5px 0;
+}
+
+nav ul li > a.active {
+    color: var(--primary-color);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    width: auto;
+}
+
+.login {
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+.loginbnw {
+    background: black;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+.loginbnw:hover {
+    background: #595959;
+    color: #ececec;
+}
+
+
+.login:hover {
+    background: var(--accent-color);
+    color: var(--terciary-color);
+}
+
+
+/*------------------NAV DESPLEGABL------------------*/
+
+.menuNivel1 {
+    display: flex;
+    align-items: center;
+}
+
+.menuNivel1 li {
+	position: relative;
+	transition: 1s;
+	justify-content: center;
+}
+
+.menuNivel1 li > a {
+	display: block;
+	z-index: 10000;
+}
+
+.menuNivel2 {
+	display: none;
+	position: absolute;
+	width: 70%;
+	height: auto;
+	top: 100%;
+	border-radius: 6px;
+	box-sizing: border-box;
+	background: #b1b1b138;
+	top: -10px;
+	padding-top: 45px;
+}
+
+.menuNivel2 > li {
+    
+    width: 100%;
+    text-align: center;
+}
+
+.menuNivel1 li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------FOOTER-------------------------*/
+
+footer {
+	background: var(--accent-color);
+	position: sticky;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	backdrop-filter: blur(2px);
+	border-top: solid 2px var(--secundary-color);
+}
+
+.footerdark {
+	background: #cecece;
+	position: sticky;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	backdrop-filter: blur(2px);
+}
+
+footer ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    
+}
+
+footer li {
+    flex: 1px;
+    color: var(--secundary-color);
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    list-style: none;
+    color: var(--secundary-color);
+    justify-content: center;
+    width: 30px;
+}
+
+.github {/*Link a mi Gu */
+    max-width: 30px;
+}
+
+footer p {
+    display: flex;
+    gap: 5px;
+}
+
+footer li a strong {
+    color: var(--decegue-color)
+}
+
+
+/*-----Slider animation-----*/
+.lineanimacion{
+
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.lineanimacion:after {
+content: '';
+height: 1px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--accent-color);
+transition: width 0.25s linear;
+}
+
+.lineanimacion:hover::after{
+    width: 100%;
+}
+
+
+/*-----Slider animation for basic nav-----*/
+.animacionheader{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionheader:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: white;
+transition: width 0.25s linear;
+}
+
+.animacionheader:hover::after{
+    width: 100%;
+    color: white;
+}
+
+/*-----Slider animation for nav-----*/
+.animacionav{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionav:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: black;
+transition: width 0.25s linear;
+}
+
+.animacionav:hover::after{
+    width: 100%;
+    color: black;
+}
+
+/*-----Slider animation for white nav-----*/
+.animacionavblack{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    color: black;
+}
+
+.animacionavblack:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: black;
+transition: width 0.25s linear;
+}
+
+.animacionavblack:hover::after{
+    width: 100%;
+    color: black;
+}
+
+/*-----Slider animation for active nav -----*/
+.animacionactive{
+    color: var(--primary-color);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.animacionactive:after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--primary-color);
+transition: width 0.25s linear;
+}
+
+.animacionactive:hover::after{
+    width: 100%;
+}
+

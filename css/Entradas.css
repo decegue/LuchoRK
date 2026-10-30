@@ -1,0 +1,139 @@
+footer {
+bottom: 0;
+width: 100%;
+position: absolute;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+.entradas {
+	background: var(--secundary-color);
+	width: 80%;
+    padding: 30px 75px 50px 75px;
+    border-radius: 16px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.ticket-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px  solid var(--accent-color);
+    padding-right: 100px;
+
+}
+
+.ticket-left img {
+    width: 188px;
+    height: 188px;
+}
+
+.ticket-right {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket-title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 20%;
+}
+
+.ticket-cta{
+    align-content: center;
+    justify-content: center;
+    margin-left: 100px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.ticket-cta h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+
+/* ------------------------------------- */
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 500px;
+}
+
+.content {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+
+h1 {
+    color: black;
+    font-size: 90px;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+h2 {
+    font-size: 45px;   
+    margin-bottom: 0;
+
+}
+
+h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+h4 {
+    color: white;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.titulo h4 {
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+}
+
+.content h1 {
+    top: 0px;
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.content h2 {
+    color: var(--text-color);
+}
+
+.titulo-content {
+    display: flex;
+}
+
+.titulo img {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

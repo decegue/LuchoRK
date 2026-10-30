@@ -139,12 +139,22 @@ nav ul li a {
 /*------------------FOOTER-------------------------*/
 
 footer {
-    background: var(--accent-color);
-    position: sticky;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(2px);
+	background: var(--accent-color);
+	position: sticky;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	backdrop-filter: blur(2px);
+	border-top: solid 2px var(--secundary-color);
+}
+
+.footerdark {
+	background: #cecece;
+	position: sticky;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	backdrop-filter: blur(2px);
 }
 
 footer ul {

@@ -160,11 +160,11 @@ div#content.content4{
 }
 
 .content4 ul li img {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    width: 650px;
-    height: 500px;    
+	padding: 0;
+	display: flex;
+	align-items: center;
+	width: 640px;
+	height: 500px;
 }
 
 .content4 ul li.odd {

@@ -130,9 +130,9 @@ div#content.content{
 /*------------CONTENT-TEXT ------------*/
 
 .content-text {
-    align-content: center;
-    width: 40%; 
-    color: black;
-    opacity: 0.8;
-    text-align: justify;
+	align-content: center;
+	width: 40%;
+	color: var(--secundary-color);
+	opacity: 0.9;
+	text-align: justify;
 }

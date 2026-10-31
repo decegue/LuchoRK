@@ -66,5 +66,9 @@ transition: .2s;
 }
 
 main div a img {
+    margin-left: 5px;}
+
+main div a img:hover {
     margin-left: 5px;
+    width: 20px;
 }

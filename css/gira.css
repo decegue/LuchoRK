@@ -153,15 +153,3 @@ h4 {
     top: 0;
     width: 100%;
 }
-
-.card {
-    background: conic-gradient(from var(--a),red, yellow);
-    animation: spin 3s linear infinite;
-}
-
-@property --a {
-    syntax: "<angle>";
-    initial-value: 0deg;
-}
-
-@keyframes spin { to { --a: 360deg; } }

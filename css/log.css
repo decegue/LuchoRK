@@ -132,7 +132,7 @@ input {
 
 
 input::placeholder{
-    color: var(--primaryw-color);
+    color: var(--primary-color);
     font-weight: 501;
 }
 
